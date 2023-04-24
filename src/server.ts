@@ -5,7 +5,7 @@ const app = fastify()
 
 // create route
 app.get('/hello', async () => {
-  const result = await knex.select('*').from('help')
+  const result = await knex.select('*').from('EMPLOYEES')
 
   return result
 })
